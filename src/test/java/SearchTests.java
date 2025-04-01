@@ -9,7 +9,7 @@ public class SearchTests {
     void successfulSearchTest() throws InterruptedException {
         open("https://www.bing.com/");
         $("[name=q").setValue("selenide").pressEnter();
-        $("[id=b_content]").shouldHave(text("https://selenide.org"));
+        $("[id=b_results]").shouldHave(text("https://selenide.org"));
     }
 }
 
